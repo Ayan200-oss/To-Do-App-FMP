@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/691856234/vector/flat-round-check-mark-green-icon-button-tick-symbol-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=hXL5nXQ2UJlh4yzs2LyZC4GtctQG0fs-mk30GPPbhbQ=" type="image/x-icon">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+    <div class="main-card">
+        <h1 class="main-heading">Add your Tasks</h1>
+        <p class="sub-heading">Ready to organize your day and boost productivity.</p>
+        
+        <div class="input-container">
+            <input type="text" placeholder="Add Item" id="todoInput"> 
+            <button class="button" onclick="addTodo()">Add</button>
+            </div>
+            <button class="del-button" onclick="deleteAllTodos()">Delete All</button>
+
+        <ul class="task-list" id="list">
+            </ul>
+            
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
